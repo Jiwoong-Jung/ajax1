@@ -69,4 +69,9 @@ public class TestController {
     public String start() {
         return "main";
     }
+
+    @GetMapping("/main")
+    public String start2() {
+        return "main";
+    }
 }

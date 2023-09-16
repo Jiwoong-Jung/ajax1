@@ -58,4 +58,10 @@ public class TestController {
             memoRepository.save(memo);
         });
     }
+
+    @GetMapping("/listAll")
+    public String listAll(Model model) {
+        model.addAttribute("list", memoRepository.findAll());
+        return "page";
+    }
 }

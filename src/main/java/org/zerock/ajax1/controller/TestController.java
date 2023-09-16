@@ -64,4 +64,9 @@ public class TestController {
         model.addAttribute("list", memoRepository.findAll());
         return "page";
     }
+
+    @GetMapping("/")
+    public String start() {
+        return "main";
+    }
 }
